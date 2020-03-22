@@ -13,8 +13,10 @@ public class ComplexOomage implements Oomage {
     public int hashCode() {
         int total = 0;
         for (int x : params) {
-            total = total * 256;
+            total = total * 255;
             total = total + x;
+
+
         }
         return total;
     }
